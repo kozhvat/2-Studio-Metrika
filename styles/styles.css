@@ -291,7 +291,6 @@ a {
     padding-bottom: 73.76px;
   }
   .container {
-    max-width: inherit;
     padding: 0 15px 0 17px;
   }
   .we,
@@ -340,7 +339,6 @@ a {
     padding-bottom: 61px;
   }
   .container {
-    max-width: inherit;
     padding: 0 12px 0 13px;
   }
   .universal-header {
