@@ -6,8 +6,6 @@ html {
 body {
   /* 16px */
   /* font-size: 1.6rem; */
-  font-family: Manrope, sans-serif;
-  font-weight: 400;
   color: #121212;
 }
 h1,
@@ -17,10 +15,12 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+button {
   box-sizing: border-box;
-  letter-spacing: -0.03em;
+  font-family: Manrope, sans-serif;
   font-weight: 400;
+  letter-spacing: -0.03em;
 }
 .content {
   background: #ffffff;
@@ -48,7 +48,7 @@ a {
   justify-content: space-between;
 }
 .header__nav-list {
-  width: 466px;
+  max-width: 466px;
 }
 
 .header__link {
@@ -105,7 +105,7 @@ a {
   line-height: 61px;
 }
 .about-us__services-link {
-  width: 255px;
+  max-width: 255px;
   height: 67px;
   display: block;
   font-size: 20px;
@@ -172,19 +172,59 @@ a {
   padding-bottom: 34px;
 }
 .services__header {
+  margin-bottom: 30px;
   padding-left: 2px;
+}
+.services__list {
+  margin-bottom: 106px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 85px;
+  column-gap: 10px;
+}
+.services__item {
+  width: calc(50% - 5px);
+  height: 447px;
+  position: relative;
 }
 .services__description {
   padding-left: 3px;
   font-size: 30px;
-  line-height: 39px;
+  line-height: 41px;
 }
 .services__img {
-  margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 25px;
 }
-.services__item:not(:last-child) {
-  margin-bottom: 60px;
+.services__terms {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 5px 20px;
+  background: #ad1818;
+  border-radius: 5px;
+  font-size: 22px;
+  line-height: 30px;
 }
+.services__order {
+  width: 100%;
+  height: 153px;
+  display: block;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 41px;
+  border: none;
+  color: #ffffff;
+  background: #ad1818;
+  cursor: pointer;
+  /* border: 1px solid #ad1818;
+  transition: 0.4s; */
+}
+/* .services__order:hover {
+  color: #ad1818;
+  background-color: transparent;
+  border: 1px solid #ad1818;
+} */
 .example {
   padding-bottom: 150px;
   /* overflow: hidden; */
@@ -227,7 +267,7 @@ a {
   margin-bottom: 32px;
 }
 .contacts__header::before {
-  width: 13px;
+  max-width: 13px;
   height: 22px;
   padding: 12px 0 0 0;
   display: block;
