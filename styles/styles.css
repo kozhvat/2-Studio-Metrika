@@ -184,7 +184,6 @@ button {
 }
 .services__item {
   width: calc(50% - 5px);
-  /* height: 447px; */
   position: relative;
 }
 .services__description {
@@ -192,13 +191,30 @@ button {
   line-height: 41px;
 }
 .services__img {
-  width: 100%;
+  height: 389px;
   margin-bottom: 25px;
 }
+.planning {
+  background: url(/resources/img/png/services/planning.png) 0 100% / cover
+    no-repeat;
+}
+.design {
+  background: url(/resources/img/png/services/design.png) 0 100% / cover
+    no-repeat;
+}
+.author {
+  background: url(/resources/img/png/services/author.png) 0 100% / cover
+    no-repeat;
+}
+.complectation {
+  background: url(/resources/img/png/services/complectation.png) 0 100% / cover
+    no-repeat;
+}
+.services__terms-wrapper {
+  display: inline-flex;
+  margin: 30px 0 0 30px;
+}
 .services__terms {
-  position: absolute;
-  top: 30px;
-  left: 30px;
   padding: 5px 20px;
   background: #ad1818;
   border-radius: 5px;
@@ -238,8 +254,7 @@ button {
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url(../resources/img/png/example.png) 0 0 / cover no-repeat scroll;
-  background-position: 50%;
+    url(../resources/img/png/example.png) 0 100% / cover no-repeat scroll;
   cursor: pointer;
   /* transition: 0.5s; */
 }
@@ -345,13 +360,12 @@ button {
   }
   .we__command {
     height: 400px;
-    width: 100%;
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../resources/img/png/interior-tablet.png) 0 50% / cover no-repeat
+      url(../resources/img/png/interior-tablet.png) 0 100% / cover no-repeat
         scroll;
   }
   .we__description {
@@ -379,16 +393,33 @@ button {
     row-gap: 80px;
   }
   .services__img {
+    height: 315px;
     margin-bottom: 15px;
   }
-  .services__description {
-    font-size: 25px;
-    line-height: 34px;
+  .planning {
+    background: url(/resources/img/png/services/planning-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .design {
+    background: url(/resources/img/png/services/design-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .author {
+    background: url(/resources/img/png/services/author-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .complectation {
+    background: url(/resources/img/png/services/complectation-tablet.png) 0 100% /
+      cover no-repeat;
   }
   .services__terms {
     padding: 7px 27px;
     font-size: 20px;
     line-height: 27px;
+  }
+  .services__description {
+    font-size: 25px;
+    line-height: 34px;
   }
 }
 /* -------------------------------------------------------------------- */
@@ -415,14 +446,13 @@ button {
     line-height: 32px;
   }
   .we__command {
-    width: 100%;
     height: 350px;
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../resources/img/png/interior-mobile.png) 0 50% / cover no-repeat
+      url(../resources/img/png/interior-mobile.png) 0 80% / cover no-repeat
         scroll;
     /* background-position: 30%; */
   }
@@ -490,12 +520,30 @@ button {
     width: 100%;
   }
   .services__img {
+    height: 240px;
     margin-bottom: 10px;
+  }
+  .planning {
+    background: url(/resources/img/png/services/planning-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .design {
+    background: url(/resources/img/png/services/design-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .author {
+    background: url(/resources/img/png/services/author-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .complectation {
+    background: url(/resources/img/png/services/complectation-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__terms-wrapper {
+    margin: 24px 0 0 23px;
   }
   .services__terms {
     padding: 5px 25px;
-    top: 24px;
-    left: 23px;
     font-size: 14px;
     line-height: 19px;
   }
