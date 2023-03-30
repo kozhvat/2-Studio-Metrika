@@ -22,9 +22,6 @@ button {
   font-weight: 400;
   letter-spacing: -0.03em;
 }
-/* .content {
-  background: #ffffff;
-} */
 .container {
   margin: 0 auto;
   max-width: 1150px;
@@ -40,9 +37,11 @@ button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 80px;
+  column-gap: 50px;
 }
 .col {
-  width: calc(50% - 5px);
+  width: calc(50% - 25px);
 }
 .nav {
   height: 25px;
@@ -74,7 +73,6 @@ button {
 .we__header {
   max-width: 956px;
   margin-bottom: 30px;
-  /* padding-right: 194px; */
   font-size: 60px;
   line-height: 60px;
 }
@@ -107,7 +105,6 @@ button {
   margin-bottom: 30px;
   padding-left: 3px;
   max-width: 1048px;
-  /* padding-right: 99px; */
   font-size: 45px;
   line-height: 61px;
 }
@@ -254,8 +251,23 @@ button {
 .feedback__header {
   margin-bottom: 30px;
 }
+.feedback__text_small {
+  padding-right: 67px;
+}
+.feedback__text_big {
+  max-width: 861px;
+}
+.feedback__item-header {
+  margin-bottom: 14px;
+  font-size: 45px;
+  line-height: 61px;
+}
 .feedback__description {
-  min-width: 505px;
+  font-size: 22px;
+  line-height: 30px;
+}
+.feedback__description_with-mb {
+  margin-bottom: 30px;
 }
 .example {
   padding-bottom: 150px;
@@ -358,6 +370,13 @@ button {
 }
 /* ------------------------------------------------------------------------ */
 @media (max-width: 1199px) {
+  .row {
+    row-gap: 53px;
+    column-gap: 10px;
+  }
+  .col {
+    width: calc(50% - 5px);
+  }
   .header {
     padding-bottom: 73.76px;
   }
@@ -371,7 +390,6 @@ button {
   }
   .we__header {
     max-width: 802px;
-    /* padding-right: 126px; */
     font-size: 50px;
     line-height: 60px;
   }
@@ -390,7 +408,6 @@ button {
   }
   .about-us__description {
     max-width: 811px;
-    /* padding-right: 235px; */
     font-size: 35px;
     line-height: 48px;
   }
@@ -439,11 +456,37 @@ button {
     font-size: 25px;
     line-height: 34px;
   }
+  .feedback {
+    margin-bottom: 120px;
+  }
+  .feedback__text {
+    max-width: none;
+  }
+  .feedback__text_small {
+    padding-right: 0;
+  }
+  .feedback__text_big {
+    max-width: 694px;
+  }
+  .feedback__item-header {
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .feedback__description {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .feedback__description_with-mb {
+    margin-bottom: 27px;
+  }
 }
 /* -------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .row {
     flex-direction: column;
+    row-gap: 80px;
+    column-gap: 0;
   }
   .col {
     width: 100%;
@@ -478,7 +521,6 @@ button {
       ),
       url(../resources/img/png/interior-mobile.png) 0 80% / cover no-repeat
         scroll;
-    /* background-position: 30%; */
   }
   .we__description {
     left: 15px;
@@ -493,7 +535,6 @@ button {
   }
   .about-us__description {
     max-width: 811px;
-    /* padding-right: 235px; */
     font-size: 22px;
     line-height: 30px;
   }
@@ -576,6 +617,27 @@ button {
     height: 100px;
     font-size: 22px;
     line-height: 30px;
+  }
+  .feedback {
+    margin-bottom: 80px;
+  }
+  .feedback__header {
+    margin-bottom: 22px;
+  }
+  .feedback__text_big {
+    max-width: none;
+  }
+  .feedback__item-header {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .feedback__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .feedback__description_with-mb {
+    margin-bottom: 22px;
   }
 }
 
