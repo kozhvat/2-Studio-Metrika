@@ -35,8 +35,11 @@
   .feedback__text {
     max-width: none;
   }
+  .feedback__item:nth-child(2n) {
+    max-width: none;
+  }
   .feedback__item:nth-child(2n + 1) {
-    max-width: 458px;
+    max-width: none;
   }
   .feedback__item:last-child:nth-child(2n + 1) {
     max-width: 694px;
