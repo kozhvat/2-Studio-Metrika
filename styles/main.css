@@ -270,11 +270,11 @@ button {
   font-size: 22px;
   line-height: 30px;
 }
-.example {
+.gallery {
   padding-bottom: 150px;
   /* overflow: hidden; */
 }
-.example__link {
+.gallery__link {
   width: 100%;
   height: 717px;
   display: block;
@@ -288,11 +288,11 @@ button {
   cursor: pointer;
   /* transition: 0.5s; */
 }
-/* .example__link:hover {
+/* .gallery__link:hover {
   transform: scale(1.02);
   box-shadow: inset 0 2000px rgba(0, 0, 0, 0.17);
 } */
-.example__description {
+.gallery__description {
   max-width: 443px;
   left: 125px;
   bottom: 60px;
