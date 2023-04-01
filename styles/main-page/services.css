@@ -1,0 +1,183 @@
+.services {
+  margin-bottom: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: #121212;
+  color: #ffffff;
+}
+.services__header {
+  margin-bottom: 30px;
+  padding-left: 2px;
+}
+.services__list {
+  padding-bottom: 98px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 85px;
+  column-gap: 10px;
+}
+.services__item {
+  width: calc(50% - 5px);
+  position: relative;
+}
+.services__description {
+  font-size: 30px;
+  line-height: 41px;
+}
+.services__img {
+  height: 389px;
+  margin-bottom: 25px;
+}
+.services__img-planning {
+  background: url(/resources/img/png/services/planning.png) 0 100% / cover
+    no-repeat;
+}
+.services__img-design {
+  background: url(/resources/img/png/services/design.png) 0 100% / cover
+    no-repeat;
+}
+.services__img-author {
+  background: url(/resources/img/png/services/author.png) 0 100% / cover
+    no-repeat;
+}
+.services__img-complectation {
+  background: url(/resources/img/png/services/complectation.png) 0 100% / cover
+    no-repeat;
+}
+.services__terms-wrapper {
+  display: inline-flex;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.services__terms {
+  padding: 5px 20px;
+  background: #ad1818;
+  border-radius: 5px;
+  font-size: 22px;
+  line-height: 30px;
+}
+.services__order {
+  width: 100%;
+  height: 153px;
+  display: block;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 41px;
+  border: none;
+  color: #ffffff;
+  background: #ad1818;
+  cursor: pointer;
+  /* border: 1px solid #ad1818;
+    transition: 0.4s; */
+}
+/* .services__order:hover {
+    color: #ad1818;
+    background-color: transparent;
+    border: 1px solid #ad1818;
+  } */
+
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  .services {
+    margin-bottom: 117px;
+    padding-bottom: 120px;
+    padding-top: 150px;
+  }
+  .services__list {
+    padding-bottom: 86px;
+    row-gap: 89px;
+  }
+  .services__img {
+    height: 315px;
+    margin-bottom: 15px;
+  }
+  .services__img-planning {
+    background: url(/resources/img/png/services/planning-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__img-design {
+    background: url(/resources/img/png/services/design-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__img-author {
+    background: url(/resources/img/png/services/author-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__img-complectation {
+    background: url(/resources/img/png/services/complectation-tablet.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__terms-wrapper {
+    margin-top: 33px;
+    margin-left: 30px;
+  }
+  .services__terms {
+    padding: 6px 27px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .services__description {
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .services {
+    margin-bottom: 80px;
+    padding: 80px 0;
+  }
+  .services__header {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .services__description {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .services__list {
+    padding-bottom: 70px;
+    row-gap: 65px;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__img {
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  .services__img-planning {
+    background: url(/resources/img/png/services/planning-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__img-design {
+    background: url(/resources/img/png/services/design-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__img-author {
+    background: url(/resources/img/png/services/author-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__img-complectation {
+    background: url(/resources/img/png/services/complectation-mobile.png) 0 100% /
+      cover no-repeat;
+  }
+  .services__terms-wrapper {
+    margin-top: 24px;
+    margin-left: 23px;
+  }
+  .services__terms {
+    padding: 5px 25px;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 3.8px;
+  }
+  .services__order {
+    height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+    border-radius: 3.8px;
+  }
+}

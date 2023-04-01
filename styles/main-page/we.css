@@ -1,0 +1,84 @@
+.we {
+  padding-bottom: 150px;
+}
+.we__header {
+  margin-bottom: 30px;
+  max-width: 956px;
+  font-size: 60px;
+  line-height: 60px;
+}
+.we__command {
+  height: 500px;
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../../resources/img/png/interior.png) 0 0 / cover no-repeat scroll;
+}
+.we__description {
+  max-width: 430px;
+  left: 40px;
+  bottom: 40px;
+  position: absolute;
+  font-size: 20px;
+  line-height: 27px;
+  color: white;
+}
+
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  .we {
+    padding-bottom: 120px;
+  }
+  .we__header {
+    max-width: 802px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .we__command {
+    height: 400px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../../resources/img/png/interior-tablet.png) 0 100% / cover no-repeat
+        scroll;
+  }
+  .we__description {
+    bottom: 30px;
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .we {
+    padding-bottom: 80px;
+  }
+  .we__header {
+    margin-bottom: 25px;
+    max-width: 337px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .we__command {
+    height: 304px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../../resources/img/png/interior-mobile.png) 0 70% / cover no-repeat
+        scroll;
+  }
+  .we__description {
+    max-width: 312px;
+    padding-right: 23px;
+    left: 15px;
+    bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

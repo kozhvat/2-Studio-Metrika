@@ -1,0 +1,54 @@
+.contacts-container {
+  margin: auto;
+  max-width: 1150px;
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-bottom: 160px;
+}
+.contacts__header {
+  margin-bottom: 32px;
+}
+.contacts__header::before {
+  max-width: 13px;
+  height: 22px;
+  padding-top: 12px;
+  display: block;
+  content: '';
+  background: url(../resources/img/png/phone.png) no-repeat;
+}
+.contacts__tel {
+  margin-bottom: 30px;
+  max-width: 472px;
+  display: block;
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 2px solid #ffffff;
+  transition: 0.4s;
+}
+.contacts__mail {
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+  transition: 0.4s;
+}
+.contacts__mail:hover,
+.contacts__tel:hover {
+  border-bottom: 2px solid #121212;
+  opacity: 0.5;
+}
+
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  /*  */
+}
+
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .contacts__tel {
+    margin-bottom: 20px;
+  }
+}
