@@ -666,9 +666,6 @@ button {
     font-size: 16px;
     line-height: 22px;
   }
-  .feedback__description_with-mb {
-    margin-bottom: 22px;
-  }
 }
 
 /* html {
