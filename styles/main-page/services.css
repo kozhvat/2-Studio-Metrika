@@ -149,20 +149,20 @@
     margin-bottom: 10px;
   }
   .services__img-planning {
-    background: url(../../resources/img/png/services/planning-mobile.png) 0 100% /
+    background: url(../../resources/img/png/services/planning-mobile.png) 0 50% /
       cover no-repeat;
   }
   .services__img-design {
-    background: url(../../resources/img/png/services/design-mobile.png) 0 100% /
+    background: url(../../resources/img/png/services/design-mobile.png) 0 50% /
       cover no-repeat;
   }
   .services__img-author {
-    background: url(../../resources/img/png/services/author-mobile.png) 0 100% /
+    background: url(../../resources/img/png/services/author-mobile.png) 0 50% /
       cover no-repeat;
   }
   .services__img-complectation {
     background: url(../../resources/img/png/services/complectation-mobile.png) 0
-      100% / cover no-repeat;
+      50% / cover no-repeat;
   }
 
   .services__terms-wrapper {
