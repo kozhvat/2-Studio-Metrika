@@ -29,22 +29,46 @@
 .gallery__img {
   width: 100%;
   max-height: 717px;
+  object-fit: cover;
+  object-position: 0 69%;
+}
+.gallery__buttons-container {
+  position: relative;
 }
 .gallery__buttons {
   position: absolute;
   bottom: 162px;
+  left: -10px;
+  width: 94px;
+  display: flex;
+  column-gap: 14px;
+}
+.gallery__button {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.gallery__button:hover {
+  opacity: 0.5;
+}
+.gallery__button-img {
+  width: 40px;
+  height: 40px;
+  justify-content: space-between;
 }
 .gallery__description-link {
   position: absolute;
-  bottom: 77px;
+  bottom: 60px;
   max-width: 443px;
-
   font-size: 30px;
   line-height: 41px;
   color: white;
   text-decoration: none;
   cursor: pointer;
+  /* transition: 0.4s; */
 }
+/* .gallery__description-link:hover {
+  opacity: 0.5;
+} */
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
