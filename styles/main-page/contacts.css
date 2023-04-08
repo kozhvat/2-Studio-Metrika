@@ -1,39 +1,45 @@
 .contacts-container {
-  margin: auto;
-  max-width: 1150px;
-  padding-right: 120px;
-  padding-left: 120px;
   padding-bottom: 160px;
 }
+.contacts {
+  max-width: 989px;
+}
 .contacts__header {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
-.contacts__header::before {
-  max-width: 13px;
-  height: 22px;
-  padding-top: 12px;
-  display: block;
+.contacts__list {
+  justify-content: space-between;
+}
+.contacts__item-tel::before,
+.contacts__item-mail::before {
   content: '';
-  background: url(../resources/img/png/phone.png) no-repeat;
-}
-.contacts__tel {
-  margin-bottom: 30px;
-  max-width: 472px;
+  width: 24px;
+  height: 24px;
   display: block;
+}
+.contacts__item-tel::before {
+  margin-left: -5px;
+  padding-top: 25.5px;
+  background: url(/resources/img/png/phone.png) 0 0 / contain no-repeat;
+}
+.contacts__item-mail::before {
+  margin-top: 1px;
+  margin-left: -1px;
+  padding-top: 16px;
+  background: url(/resources/img/png/letter.png) 0 0 / contain no-repeat;
+}
+.contacts__tel,
+.contacts__mail {
   font-size: 60px;
   line-height: 60px;
+  display: block;
   text-decoration: none;
   color: #121212;
   border-bottom: 2px solid #ffffff;
   transition: 0.4s;
 }
 .contacts__mail {
-  font-size: 60px;
-  line-height: 60px;
-  color: #121212;
-  text-decoration: none;
-  border-bottom: 2px solid #ffffff;
-  transition: 0.4s;
+  padding-right: 3px;
 }
 .contacts__mail:hover,
 .contacts__tel:hover {
@@ -43,12 +49,50 @@
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
-  /*  */
+  .contacts-container {
+    padding-bottom: 80px;
+  }
+  .contacts {
+    max-width: 778px;
+  }
+  .contacts__header {
+    margin-bottom: 25px;
+  }
+  .contacts__tel,
+  .contacts__mail {
+    font-size: 45px;
+  }
+  .contacts__item-mail::before {
+    padding-top: 15px;
+  }
 }
-
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
-  .contacts__tel {
+  .contacts-container {
+    padding-bottom: 80px;
+  }
+  .contacts {
+    max-width: none;
+  }
+  .contacts__header {
     margin-bottom: 20px;
+  }
+  .contacts__list {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  .contacts__item {
+    margin-bottom: 0;
+  }
+  .contacts__item-tel::before,
+  .contacts__item-mail::before {
+    padding-top: 20px;
+    width: 18px;
+    height: 18px;
+  }
+  .contacts__tel,
+  .contacts__mail {
+    font-size: 35px;
+    line-height: 46px;
   }
 }

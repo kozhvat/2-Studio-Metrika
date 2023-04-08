@@ -5,7 +5,13 @@
   margin-bottom: 30px;
 }
 .feedback__list {
+  flex-wrap: wrap;
   justify-content: start;
+  row-gap: 80px;
+  column-gap: 50px;
+}
+.feedback__item {
+  width: calc(50% - 25px);
 }
 .feedback__item:nth-child(2n + 1) {
   max-width: 528px;
@@ -31,6 +37,13 @@
 @media (max-width: 1199px) {
   .feedback {
     padding-bottom: 122px;
+  }
+  .feedback__list {
+    row-gap: 78px;
+    column-gap: 10px;
+  }
+  .feedback__item {
+    width: calc(50% - 5px);
   }
   .feedback__text {
     max-width: none;
@@ -62,6 +75,10 @@
   }
   .feedback__header {
     margin-bottom: 22px;
+  }
+  .feedback__list {
+    row-gap: 72px;
+    column-gap: 0;
   }
   .feedback__item:last-child:nth-child(2n + 1) {
     margin-top: 8px;

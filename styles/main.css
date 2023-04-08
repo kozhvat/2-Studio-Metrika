@@ -46,19 +46,12 @@ button {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 80px;
-  column-gap: 50px;
-}
-.col {
-  width: calc(50% - 25px);
 }
 .nav {
   height: 25px;
   display: flex;
   justify-content: space-between;
 }
-
 .box {
   height: 128px;
 }
@@ -68,13 +61,6 @@ button {
   .container {
     padding-right: 15px;
     padding-left: 17px;
-  }
-  .row {
-    row-gap: 78px;
-    column-gap: 10px;
-  }
-  .col {
-    width: calc(50% - 5px);
   }
 }
 /* -------------------------------------------------------------------- */
@@ -92,8 +78,6 @@ button {
   }
   .row {
     flex-direction: column;
-    row-gap: 72px;
-    column-gap: 0;
   }
   .col {
     width: 100%;
