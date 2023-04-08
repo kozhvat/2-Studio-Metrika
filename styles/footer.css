@@ -9,7 +9,7 @@
   color: #ffffff;
 }
 .footer__nav-list {
-  max-width: 450px;
+  width: 450px;
   padding-right: 13px;
   padding-bottom: 88px;
 }
@@ -24,7 +24,7 @@
 .footer__copyright {
   font-size: 20px;
   line-height: 27px;
-  padding-left: 5px;
+  padding-left: 40px;
   opacity: 0.5;
 }
 
@@ -40,7 +40,7 @@
     padding-bottom: 26px;
   }
   .footer__nav-list {
-    max-width: 280px;
+    width: 280px;
     padding-left: 13px;
     padding-bottom: 33.5px;
   }
@@ -51,6 +51,6 @@
   .footer__copyright {
     font-size: 13px;
     line-height: 18px;
-    padding-left: 0px;
+    padding-left: 27px;
   }
 }
