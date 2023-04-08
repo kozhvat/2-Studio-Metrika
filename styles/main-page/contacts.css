@@ -1,5 +1,5 @@
 .contacts-container {
-  padding-bottom: 160px;
+  padding-bottom: 150px;
 }
 .contacts {
   max-width: 989px;
@@ -69,7 +69,7 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .contacts-container {
-    padding-bottom: 80px;
+    padding-bottom: 79px;
   }
   .contacts {
     max-width: none;
@@ -79,7 +79,7 @@
   }
   .contacts__list {
     flex-wrap: wrap;
-    row-gap: 16px;
+    row-gap: 16.5px;
   }
   .contacts__item {
     margin-bottom: 0;
@@ -90,8 +90,12 @@
     width: 18px;
     height: 18px;
   }
+  .contacts__item-tel::before {
+    margin-left: -4px;
+  }
   .contacts__tel,
   .contacts__mail {
+    margin-left: -2px;
     font-size: 35px;
     line-height: 46px;
   }

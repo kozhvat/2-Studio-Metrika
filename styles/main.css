@@ -26,7 +26,8 @@ h5,
 h6,
 p,
 a,
-button {
+button,
+div {
   box-sizing: border-box;
   font-family: Manrope, sans-serif;
   font-weight: 400;
