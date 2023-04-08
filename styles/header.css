@@ -1,11 +1,16 @@
 .header {
   height: 25px;
-  padding: 33px 0 70px 0;
+  padding-top: 33px;
+  padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
+.header__img {
+  max-width: 127px;
+  max-height: 25px;
+}
 .header__nav-list {
-  max-width: 466px;
+  width: 466px;
 }
 .header__link {
   color: #121212;
@@ -19,14 +24,14 @@
 }
 
 /* ----------------------------------------------------------------------------- */
-@media (min-width: 1199px) {
+@media (max-width: 1199px) {
   .header {
     padding-bottom: 73.76px;
   }
 }
 
 /* ----------------------------------------------------------------------------- */
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .header {
     padding-bottom: 61px;
   }
