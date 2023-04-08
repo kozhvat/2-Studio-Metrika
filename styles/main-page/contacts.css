@@ -20,16 +20,17 @@
 .contacts__item-tel::before {
   margin-left: -5px;
   padding-top: 25.5px;
-  background: url(/resources/img/png/phone.png) 0 0 / contain no-repeat;
+  background: url(../../resources/img/png/phone.png) 0 0 / contain no-repeat;
 }
 .contacts__item-mail::before {
   margin-top: 1px;
   margin-left: -1px;
   padding-top: 16px;
-  background: url(/resources/img/png/letter.png) 0 0 / contain no-repeat;
+  background: url(../../resources/img/png/letter.png) 0 0 / contain no-repeat;
 }
 .contacts__tel,
 .contacts__mail {
+  width: fit-content;
   font-size: 60px;
   line-height: 60px;
   display: block;
