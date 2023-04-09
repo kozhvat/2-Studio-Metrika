@@ -10,10 +10,10 @@
   padding-left: 2px;
 }
 .services__list {
-  padding-bottom: 98px;
+  padding-bottom: 103px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 85px;
+  row-gap: 80px;
   column-gap: 10px;
 }
 .services__item {
@@ -21,12 +21,13 @@
   position: relative;
 }
 .services__description {
+  margin-left: 4px;
   font-size: 30px;
   line-height: 41px;
 }
 .services__img {
   height: 389px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .services__img-planning {
   background: url(../../resources/img/png/services/planning.png) 0 100% / cover
@@ -46,11 +47,11 @@
 }
 .services__terms-wrapper {
   display: inline-flex;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 31px;
+  margin-left: 29px;
 }
 .services__terms {
-  padding: 5px 20px;
+  padding: 5px 21px;
   background: #ad1818;
   border-radius: 5px;
   font-size: 22px;
@@ -79,17 +80,21 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   .services {
-    margin-bottom: 117px;
-    padding-bottom: 120px;
-    padding-top: 150px;
+    margin-bottom: 121px;
+    padding-bottom: 118px;
+    padding-top: 152px;
+  }
+  .services__header {
+    margin-left: 2px;
+    margin-bottom: 29px;
   }
   .services__list {
-    padding-bottom: 86px;
-    row-gap: 89px;
+    padding-bottom: 78px;
+    row-gap: 80px;
   }
   .services__img {
     height: 315px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
   .services__img-planning {
     background: url(../../resources/img/png/services/planning-tablet.png) 0 100% /
@@ -108,7 +113,7 @@
       100% / cover no-repeat;
   }
   .services__terms-wrapper {
-    margin-top: 33px;
+    margin-top: 31px;
     margin-left: 30px;
   }
   .services__terms {
@@ -117,6 +122,7 @@
     line-height: 27px;
   }
   .services__description {
+    margin-left: -1px;
     font-size: 25px;
     line-height: 34px;
   }
@@ -125,8 +131,9 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .services {
-    margin-bottom: 80px;
-    padding: 80px 0;
+    margin-bottom: 81px;
+    padding-top: 80px;
+    padding-bottom: 79px;
   }
   .services__header {
     margin-bottom: 20px;
@@ -134,12 +141,13 @@
     line-height: 19px;
   }
   .services__description {
+    margin-left: 1px;
     font-size: 18px;
     line-height: 25px;
   }
   .services__list {
-    padding-bottom: 70px;
-    row-gap: 65px;
+    padding-bottom: 58px;
+    row-gap: 59px;
   }
   .services__item {
     width: 100%;
@@ -166,11 +174,11 @@
   }
 
   .services__terms-wrapper {
-    margin-top: 24px;
-    margin-left: 23px;
+    margin-top: 23px;
+    margin-left: 25px;
   }
   .services__terms {
-    padding: 5px 25px;
+    padding: 5px 24px;
     font-size: 14px;
     line-height: 19px;
     border-radius: 3.8px;
