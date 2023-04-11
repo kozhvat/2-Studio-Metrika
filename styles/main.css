@@ -6,17 +6,19 @@
 @import url(./main-page/feedback.css);
 @import url(./main-page/gallery.css);
 @import url(./main-page/contacts.css);
+@import url(./main-page/popup.css);
 @import url(footer.css);
 
 html {
-  /* 10px */
-  /* font-size: 62.5%; */
+  /* font-size: 62.5%; */ /* 10px */
   scroll-behavior: smooth;
 }
 body {
-  /* 16px */
-  /* font-size: 1.6rem; */
+  /* font-size: 1.6rem; */ /* 16px */
   color: #121212;
+}
+.body_fixed {
+  overflow: hidden;
 }
 h1,
 h2,
@@ -34,6 +36,10 @@ div {
   letter-spacing: -0.03em;
   background: none;
   border: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .container {
   margin: auto;
