@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  padding: 20px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,12 +20,13 @@
 }
 .js-popup__content {
   position: relative;
-  margin: 20px;
   padding: 96px 79px 86px 55px;
   width: 777px;
+  max-height: 100%;
   border-radius: 10px;
   text-align: center;
   background: #ffffff;
+  overflow-y: scroll;
 }
 .js-popup__close-btn {
   position: absolute;
@@ -47,10 +49,7 @@
   line-height: 25px;
 }
 .js-popup__inputs-list {
-  max-width: 643px;
   margin-bottom: 80px;
-}
-.js-popup__input-item {
 }
 .js-popup__input-item:not(:last-child) {
   margin-bottom: 50px;
@@ -65,12 +64,6 @@
 .js-popup__input:focus {
   outline: none;
 }
-.js-popup__input-name {
-}
-.js-popup__input-mail {
-}
-.js-popup__input-phone {
-}
 .js-popup__submit {
   width: 100%;
   font-size: 20px;
@@ -83,10 +76,44 @@
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
-  /* f */
+  .js-popup__close-btn {
+    right: 44px;
+  }
 }
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
-  /* f */
+  .js-popup {
+    padding: 7px;
+  }
+  .js-popup__content {
+    padding: 80px 24px 80px 16px;
+    width: 100%;
+  }
+  .js-popup__close-btn {
+    top: 40px;
+    right: 29px;
+    width: 30px;
+    height: 30px;
+  }
+  .js-popup__header {
+    margin-bottom: 11px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .js-popup__description {
+    margin-bottom: 70px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .js-popup__inputs-list {
+    margin-bottom: 60px;
+  }
+  .js-popup__input-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .js-popup__input {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
