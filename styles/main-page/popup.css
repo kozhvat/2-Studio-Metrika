@@ -112,7 +112,7 @@
     line-height: 34px;
   }
   .js-popup__description {
-    margin-left: 61px;
+    margin: auto;
     max-width: 210px;
     margin-bottom: 55px;
     font-size: 14px;
