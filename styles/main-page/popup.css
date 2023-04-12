@@ -20,8 +20,9 @@
 }
 .js-popup__content {
   position: relative;
-  padding: 96px 79px 86px 55px;
-  width: 777px;
+  margin-left: -5px;
+  padding: 94px 77px 86px 55px;
+  width: 774px;
   max-height: 100%;
   border-radius: 10px;
   text-align: center;
@@ -30,8 +31,8 @@
 }
 .js-popup__close-btn {
   position: absolute;
-  top: 32px;
-  right: 34px;
+  top: 31px;
+  right: 32px;
   width: 50px;
   height: 50px;
   background: url(../../resources/img/png/close-button-popup.png) 0 0 / contain
@@ -39,16 +40,19 @@
   cursor: pointer;
 }
 .js-popup__header {
-  margin-bottom: 4px;
+  margin-left: 13px;
+  margin-bottom: 3px;
   font-size: 45px;
   line-height: 61px;
 }
 .js-popup__description {
+  margin-left: 24px;
   margin-bottom: 60px;
   font-size: 18px;
   line-height: 25px;
 }
 .js-popup__inputs-list {
+  margin-left: -1px;
   margin-bottom: 80px;
 }
 .js-popup__input-item:not(:last-child) {
@@ -56,7 +60,7 @@
 }
 .js-popup__input {
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   border-bottom: 1px solid #000000;
   font-size: 25px;
   line-height: 34px;
@@ -65,6 +69,7 @@
   outline: none;
 }
 .js-popup__submit {
+  margin-left: 3px;
   width: 100%;
   font-size: 20px;
   line-height: 67px;
@@ -79,34 +84,42 @@
   .js-popup__close-btn {
     right: 44px;
   }
+  .js-popup__content {
+    margin-left: 1px;
+    width: 775px;
+  }
 }
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .js-popup {
-    padding: 7px;
+    padding: 7px 14px 7px 10px;
   }
   .js-popup__content {
-    padding: 80px 24px 80px 16px;
+    padding: 79px 24px 80px 16px;
     width: 100%;
   }
   .js-popup__close-btn {
-    top: 40px;
-    right: 29px;
+    top: 39px;
+    right: 28px;
     width: 30px;
     height: 30px;
   }
   .js-popup__header {
+    margin-left: 9px;
     margin-bottom: 11px;
     font-size: 25px;
     line-height: 34px;
   }
   .js-popup__description {
-    margin-bottom: 70px;
+    margin-left: 61px;
+    max-width: 210px;
+    margin-bottom: 55px;
     font-size: 14px;
     line-height: 19px;
   }
   .js-popup__inputs-list {
+    margin-left: 1px;
     margin-bottom: 60px;
   }
   .js-popup__input-item:not(:last-child) {
@@ -115,5 +128,8 @@
   .js-popup__input {
     font-size: 18px;
     line-height: 25px;
+  }
+  .js-popup__submit {
+    margin-left: 5px;
   }
 }
