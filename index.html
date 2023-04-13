@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <!-- <header class="header container">
+    <header class="header container">
       <a class="header__logo" href="./index.html"
         ><img
           class="header__img"
@@ -45,9 +45,9 @@
           <a class="header__link universal-header" href="#contacts">контакты</a>
         </li>
       </ul>
-    </header> -->
+      <button class="header__burger js-burger__btn"></button>
+    </header>
     <main class="content">
-      <section class="box"></section>
       <section class="we container">
         <h1 class="we__header">
           Современные и стильные интерьеры для комфортной жизни
@@ -428,6 +428,39 @@
         студия дизайна интерьера Метрика — 2023
       </div>
     </footer>
+
+    <div class="js-burger">
+      <div class="js-burger__content">
+        <img
+          class="js-burger__img"
+          src="./resources/img/png/logo.png"
+          alt="логотип студии Метрика"
+        />
+        <ul class="js-burger__nav-list">
+          <li class="js-burger__item">
+            <a class="js-burger__link" href="#about-us">о нас</a>
+          </li>
+          <li class="js-burger__item">
+            <a class="js-burger__link" href="#projects">проекты</a>
+          </li>
+          <li class="js-burger__item">
+            <a class="js-burger__link" href="#services">услуги</a>
+          </li>
+          <li class="js-burger__item">
+            <a class="js-burger__link" href="#contacts">контакты</a>
+          </li>
+        </ul>
+        <div class="js-burger__contacts">
+          <h2 class="js-burger__contacts-header">для связи:</h2>
+          <a class="js-burger__tel" href="tel:+79358954535" target="_blank"
+            >+7 935&nbsp 895-45-35</a
+          >
+          <a class="js-burger__mail" href="https://t.me/kozhvat" target="_blank"
+            >kozhvat</a
+          >
+        </div>
+      </div>
+    </div>
     <div class="js-popup">
       <div class="js-popup__content">
         <div class="js-popup__close-btn"></div>
@@ -461,7 +494,8 @@
         <input type="submit" class="js-popup__submit" />
       </div>
     </div>
-    <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/burger.js"></script>
     <script src="./scripts/popup.js"></script>
+    <script src="./scripts/gallery.js"></script>
   </body>
 </html>

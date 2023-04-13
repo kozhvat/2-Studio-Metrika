@@ -1,14 +1,14 @@
 const POPUP_OPENED_CLASSNAME = 'js-popup_open';
-const BODY_FIXED_CLASSNAME = 'body_fixed';
+const POPUP_BODY_FIXED_CLASSNAME = 'popup-body_fixed';
 
-const bodyNode = document.querySelector('body');
+const popupBodyNode = document.querySelector('body');
 const popupNode = document.querySelector('.js-popup');
 const popupContentNode = document.querySelector('.js-popup__content');
-const btnOpenNode = document.querySelector('.js-btn');
-const btnCloseNode = document.querySelector('.js-popup__close-btn');
+const popupBtnOpenNode = document.querySelector('.js-btn');
+const popupBtnCloseNode = document.querySelector('.js-popup__close-btn');
 
-btnOpenNode.addEventListener('click', togglePopup);
-btnCloseNode.addEventListener('click', togglePopup);
+popupBtnOpenNode.addEventListener('click', togglePopup);
+popupBtnCloseNode.addEventListener('click', togglePopup);
 
 popupNode.addEventListener('click', (event) => {
   const isClickOutsideContent = !event
@@ -22,5 +22,5 @@ popupNode.addEventListener('click', (event) => {
 
 function togglePopup() {
   popupNode.classList.toggle(POPUP_OPENED_CLASSNAME);
-  bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
+  popupBodyNode.classList.toggle(POPUP_BODY_FIXED_CLASSNAME);
 }
