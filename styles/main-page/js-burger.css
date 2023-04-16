@@ -10,7 +10,7 @@
   z-index: 2;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .js-burger_open {
   opacity: 1;
@@ -18,11 +18,17 @@
 }
 .js-burger__content-panel {
   position: relative;
-  padding: 79px 65px 84px 30px;
+  padding: 79px 65px 5px 30px;
   width: 274px;
   height: 100%;
   background: #ffffff;
-  overflow-y: scroll;
+  overflow-y: auto;
+  /* transition: transform 0.4s linear; */
+  transition: transform, 0.4s ease-in-out;
+  transform: translateX(100%);
+}
+.js-burger_open .js-burger__content-panel {
+  transform: translateX(0%);
 }
 .js-burger__btn {
   display: none;

@@ -452,12 +452,21 @@
         </ul>
         <div class="js-burger__contacts js-burger__content">
           <h2 class="js-burger__contacts-header">для связи:</h2>
-          <a class="js-burger__tel" href="tel:+79358954535" target="_blank"
-            >+7 935&nbsp 895-45-35</a
-          >
-          <a class="js-burger__mail" href="https://t.me/kozhvat" target="_blank"
-            >kozhvat</a
-          >
+          <ul class="js-burger__contacts-list">
+            <li class="js-burger__contacts-item">
+              <a class="js-burger__tel" href="tel:+79358954535" target="_blank"
+                >+7 935&nbsp 895-45-35</a
+              >
+            </li>
+            <li class="js-burger__contacts-item">
+              <a
+                class="js-burger__mail"
+                href="https://t.me/kozhvat"
+                target="_blank"
+                >kozhvat</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -468,30 +477,35 @@
         <p class="js-popup__description">
           Заполните форму, мы свяжемся с вами в течение суток
         </p>
-        <ul class="js-popup__inputs-list">
-          <li class="js-popup__input-item">
-            <input
-              type="text"
-              placeholder="Имя"
-              class="js-popup__input js-popup__input-name"
-            />
-          </li>
-          <li class="js-popup__input-item">
-            <input
-              type="email"
-              placeholder="Электронная почта"
-              class="js-popup__input js-popup__input-mail"
-            />
-          </li>
-          <li class="js-popup__input-item">
-            <input
-              type="tel"
-              placeholder="Номер телефона"
-              class="js-popup__input js-popup__input-phone"
-            />
-          </li>
-        </ul>
-        <input type="submit" value="Отправить" class="js-popup__submit" />
+        <form class="js-popup__inputs">
+          <ul class="js-popup__inputs-list">
+            <li class="js-popup__input-item">
+              <input
+                type="text"
+                name="text"
+                placeholder="Имя"
+                class="js-popup__input js-popup__input-name"
+              />
+            </li>
+            <li class="js-popup__input-item">
+              <input
+                type="email"
+                name="email"
+                placeholder="Электронная почта"
+                class="js-popup__input js-popup__input-mail"
+              />
+            </li>
+            <li class="js-popup__input-item">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Номер телефона"
+                class="js-popup__input js-popup__input-phone"
+              />
+            </li>
+          </ul>
+          <input type="submit" value="Отправить" class="js-popup__submit" />
+        </form>
       </div>
     </div>
     <script src="./scripts/burger.js"></script>

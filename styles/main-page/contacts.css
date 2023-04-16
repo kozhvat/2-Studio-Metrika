@@ -32,7 +32,6 @@
   margin-left: -1px;
   padding-top: 16px;
   background: url(../../resources/img/png/letter.png) 0 0 / contain no-repeat;
-  opacity: 0.5;
 }
 .contacts__tel,
 .contacts__mail {
@@ -42,17 +41,14 @@
   display: block;
   text-decoration: none;
   color: #121212;
-  transition: 0.4s;
-}
-.contacts__tel {
   border-bottom: 2px solid #ffffff;
+  transition: 0.4s;
 }
 .contacts__mail {
   padding-right: 3px;
-  border-bottom: 2px solid #121212;
-  opacity: 0.5;
 }
-.contacts__tel:hover {
+.contacts__tel:hover,
+.contacts__mail:hover {
   border-bottom: 2px solid #121212;
   opacity: 0.5;
 }
@@ -69,7 +65,8 @@
   .contacts__mail {
     font-size: 45px;
   }
-  .contacts__tel:hover {
+  .contacts__tel:hover,
+  .contacts__mail:hover {
     opacity: 1;
   }
   .contacts__item-mail::before {

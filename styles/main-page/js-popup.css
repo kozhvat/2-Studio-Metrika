@@ -27,7 +27,7 @@
   border-radius: 10px;
   text-align: center;
   background: #ffffff;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .js-popup__close-btn {
   position: absolute;
