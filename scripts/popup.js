@@ -1,10 +1,10 @@
-const POPUP_OPENED_CLASSNAME = 'js-popup_open';
+const POPUP_OPENED_CLASSNAME = 'popup_open';
 const POPUP_BODY_FIXED_CLASSNAME = 'popup-body_fixed';
 
 const popupBodyNode = document.querySelector('body');
 const popupNode = document.querySelector('.js-popup');
 const popupContentNode = document.querySelector('.js-popup__content');
-const popupBtnOpenNode = document.querySelector('.js-btn');
+const popupBtnOpenNode = document.querySelector('.js-order-btn');
 const popupBtnCloseNode = document.querySelector('.js-popup__close-btn');
 
 popupBtnOpenNode.addEventListener('click', togglePopup);

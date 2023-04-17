@@ -1,6 +1,6 @@
 .gallery {
   position: relative;
-  margin-bottom: 151px;
+  margin-bottom: 149px;
   /* overflow: hidden; */
 }
 .gallery::after {
@@ -20,7 +20,7 @@
 }
 .gallery__header {
   position: absolute;
-  top: 68px;
+  top: 66px;
   font-size: 22px;
   line-height: 30px;
   z-index: 1;
@@ -126,10 +126,10 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .gallery {
-    margin-bottom: 81px;
+    margin-bottom: 80px;
   }
   .gallery__header {
-    top: 62px;
+    top: 61px;
     left: 12px;
     font-size: 14px;
     line-height: 19px;

@@ -33,6 +33,7 @@
     padding-bottom: 120px;
   }
   .we__header {
+    margin-left: -2px;
     max-width: 802px;
     font-size: 50px;
     line-height: 60px;
@@ -58,6 +59,7 @@
     padding-bottom: 80px;
   }
   .we__header {
+    margin-left: 0px;
     margin-bottom: 24px;
     max-width: 337px;
     font-size: 30px;

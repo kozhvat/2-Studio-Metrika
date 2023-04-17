@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  padding-top: 58px;
+  padding-top: 59px;
   padding-bottom: 30px;
   background: #121212;
   color: #ffffff;
@@ -41,13 +41,13 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .footer {
-    padding-top: 29px;
+    padding-top: 30px;
     padding-bottom: 26px;
   }
   .footer__nav-list {
     width: 280px;
     padding-left: 13px;
-    padding-bottom: 33.5px;
+    padding-bottom: 32.5px;
   }
   .footer__link {
     font-size: 12px !important;

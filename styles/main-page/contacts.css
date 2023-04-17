@@ -1,7 +1,8 @@
 .contacts-container {
-  padding-bottom: 150px;
+  padding-bottom: 148px;
 }
 .contacts__header {
+  margin-left: -1px;
   margin-bottom: 24px;
 }
 .contacts__list {
@@ -11,10 +12,6 @@
 .contacts__item-mail {
   width: 50%;
 }
-.contacts__item-mail {
-  margin-top: -1px;
-  margin-left: 10px;
-}
 .contacts__item-tel::before,
 .contacts__item-mail::before {
   content: '';
@@ -23,14 +20,14 @@
   display: block;
 }
 .contacts__item-tel::before {
-  margin-left: -5px;
-  padding-top: 25.5px;
+  margin-left: -6px;
+  padding-top: 26.5px;
   background: url(../../resources/img/png/phone.png) 0 0 / contain no-repeat;
 }
 .contacts__item-mail::before {
   margin-top: 1px;
-  margin-left: -1px;
-  padding-top: 16px;
+  margin-left: 1px;
+  padding-top: 26px;
   background: url(../../resources/img/png/letter.png) 0 0 / contain no-repeat;
 }
 .contacts__tel,
@@ -45,7 +42,7 @@
   transition: 0.4s;
 }
 .contacts__mail {
-  padding-right: 3px;
+  margin-left: 1px;
 }
 .contacts__tel:hover,
 .contacts__mail:hover {
@@ -56,7 +53,7 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   .contacts-container {
-    padding-bottom: 118px;
+    padding-bottom: 117px;
   }
   .contacts__header {
     margin-bottom: 25px;
@@ -65,12 +62,10 @@
   .contacts__mail {
     font-size: 45px;
   }
-  .contacts__tel:hover,
-  .contacts__mail:hover {
-    opacity: 1;
-  }
   .contacts__item-mail::before {
-    padding-top: 13px;
+    padding-top: 26px;
+    margin-top: 0px;
+    margin-left: 4px;
   }
 }
 /* ----------------------------------------------------------------------------- */
@@ -79,6 +74,7 @@
     padding-bottom: 80px;
   }
   .contacts__header {
+    margin-left: 1px;
     margin-bottom: 19px;
   }
   .contacts__list {
@@ -94,15 +90,17 @@
   }
   .contacts__item-tel::before,
   .contacts__item-mail::before {
-    padding-top: 20px;
     width: 18px;
     height: 18px;
   }
   .contacts__item-tel::before {
     margin-left: -4px;
+    padding-top: 20px;
   }
   .contacts__item-mail::before {
-    opacity: 1;
+    margin-top: 1px;
+    margin-left: -1px;
+    padding-top: 18px;
   }
   .contacts__tel,
   .contacts__mail {
@@ -110,9 +108,9 @@
     font-size: 35px;
     line-height: 46px;
   }
-  .contacts__mail {
-    padding-right: 0px;
-    border-bottom: none;
+  .contacts__tel:hover,
+  .contacts__mail:hover {
+    border-bottom: 2px solid #ffffff;
     opacity: 1;
   }
 }

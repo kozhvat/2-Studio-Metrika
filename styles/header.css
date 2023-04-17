@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 25px;
-  padding-top: 31px;
+  padding-top: 34px;
   padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,8 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   .header {
-    padding-bottom: 73.76px;
+    padding-top: 32px;
+    padding-bottom: 71px;
   }
   .header__nav-list {
     opacity: 0;
@@ -37,6 +38,7 @@
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .header {
+    padding-top: 31px;
     padding-bottom: 52px;
   }
   .header__img {
