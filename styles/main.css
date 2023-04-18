@@ -8,6 +8,7 @@
 @import url(./main-page/contacts.css);
 @import url(./main-page/popup.css);
 @import url(./main-page/burger.css);
+@import url(stub-page.css);
 @import url(footer.css);
 
 html {
