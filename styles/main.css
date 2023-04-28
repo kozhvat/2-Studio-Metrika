@@ -63,9 +63,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.box {
-  height: 128px;
-}
 
 /* ------------------------------------------------------------------------ */
 @media (max-width: 1199px) {
@@ -76,9 +73,6 @@ a {
 }
 /* -------------------------------------------------------------------- */
 @media (max-width: 767px) {
-  .box {
-    height: 108px;
-  }
   .container {
     padding-right: 12px;
     padding-left: 13px;
